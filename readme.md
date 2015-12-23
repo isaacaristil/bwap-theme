@@ -13,10 +13,9 @@ git clone https://github.com/alanpilloud/bwap-theme.git
 cd bwap-theme
 ```
 
-Update the theme depedencies and install the node modules (Grunt) :
+Update the theme depedencies :
 ```
 bower install
-npm install
 ```
 
 Then compile the css :
