@@ -1,0 +1,12 @@
+{
+  "name": "rapid",
+  "version": "1.0.0",
+  "authors": [
+    "alanpilloud <alanpilloud@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "3.3.5"
+  }
+}
