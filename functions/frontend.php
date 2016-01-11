@@ -45,3 +45,20 @@ remove_action('wp_print_styles', 'print_emoji_styles'); //Remove Emojies CSS
  */
 remove_action('wp_head', 'feed_links_extra', 3); //Extra feeds such as category feeds
 remove_action('wp_head', 'feed_links', 2); // General feeds: Post and Comment Feed
+
+/**
+ *  Custom login logo
+ */
+add_action('login_enqueue_scripts', function () {
+    echo '
+    <style type="text/css">
+        .login h1 a {
+            background-image: url('.get_stylesheet_directory_uri().'/images/logo.svg);
+            width:100%;
+            padding-bottom: 30px;
+        }
+    </style>';
+});
+
+add_filter( 'login_headerurl', 'get_home_url' );
+add_filter( 'login_headertitle', '__return_empty_string' );
