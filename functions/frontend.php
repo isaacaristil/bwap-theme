@@ -4,7 +4,7 @@
  *  Your CSS and JS files goes here
  */
 add_action('wp_enqueue_scripts', function(){
-	wp_register_style('styles', get_bloginfo( 'template_url' ) . '/css/styles.css', false, 1);
+	wp_register_style('styles', get_bloginfo( 'template_url' ) . '/style.css', false, 1);
 	wp_enqueue_style('styles');
 
 	wp_deregister_script('jquery');
