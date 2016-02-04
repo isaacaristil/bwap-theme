@@ -1,26 +1,27 @@
 <?php
-/**
- *  Tiles are a good way to provide a list of items
- *  
- *  They usually have an image, but it is optionnal
- *  
- *  Usage : 
- *  
-set_query_var( 'url', '/get/the/permalink' );
-set_query_var( 'title', 'Your post title' );
-set_query_var( 'subtitle', 'Category or date' );
-set_query_var( 'image', 'https://placeholdit.imgix.net/~text?w=450&h=350' );
-get_template_part( 'partials/tile');
- */
+$fields = get_query_var('fields', false);
+
+if($img = wp_get_attachment_image_src(get_post_thumbnail_id($fields['ID']),'thumbnail')) {
+    $img = $img[0];
+} else {
+    $img = false;
+}
+
 ?>
-<a href="<?= get_query_var( 'url', '#' ) ?>">
+<a href="<?= get_permalink($fields['ID']) ?>">
     <div class="tile">
-        <?php if(get_query_var( 'image', false )) { ?>
+        <?php if($img) { ?>
         <div class="tile__image-wrap">
-            <div class="tile__image" style="background-image:url(<?= get_query_var( 'image' ) ?>)"></div>
+            <div class="tile__image" style="background-image:url(<?= $img ?>)"></div>
         </div>
-        <?php } ?>
-        <div class="tile__title"><?= get_query_var( 'title', '' ) ?></div>
-        <div class="tile__subtitle"><?= get_query_var( 'subtitle', '' ) ?></div>
+        <?php }
+            if(isset($fields['title'])) {
+                echo '<div class="tile__title">'.$fields['title'].'</div>';
+            }
+
+            if(isset($fields['subtitle'])) {
+                echo '<div class="tile__subtitle">'.$fields['subtitle'].'</div>';
+            }
+        ?>
     </div>
 </a>
