@@ -108,24 +108,3 @@ add_action('admin_head', function(){
 	 */
     remove_action('admin_notices', 'update_nag', 3 );
 });
-
-/**
- *  Admin welcome message displayed in a widget
- */
-add_action('wp_dashboard_setup', function(){
-    wp_add_dashboard_widget('example_dashboard_widget', 'Administration Web', function(){
-        echo
-        'Bienvenue sur l\'administration de la plateforme<br/>'.
-        '<strong>'.get_bloginfo('name').'</strong><br/><br/>'.
-        '<img style="float: left;height: 66px;margin-right: 20px;" src="http://www.ergopix.com/wp-content/themes/ergopix/images/logo-min.png" alt="" />'.
-        'Ergopix Sàrl<br/>Avenue Nestlé 22<br/>1800 Vevey<br/>'.
-        '<a href="mailto:support@ergopix.com">support@ergopix.com</a><br/>';
-    });
-});
-
-/**
- *  Put wpseo metabox in the end of the pages/posts
- */
-add_filter('wpseo_metabox_prio',function(){
-    return 'low';
-});
