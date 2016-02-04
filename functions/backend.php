@@ -34,7 +34,6 @@ add_action('admin_menu', function() {
 	remove_meta_box('dashboard_right_now', 'dashboard', 'side');
 	remove_meta_box('dashboard_secondary', 'dashboard', 'side');
 	remove_meta_box('icl_dashboard_widget', 'dashboard', 'side');
-	remove_meta_box('wpseo-dashboard-overview', 'dashboard', 'normal');
 
     /**
      *  Remove widgets from post
@@ -71,8 +70,6 @@ add_filter('sanitize_file_name', 'remove_accents');
 function wp_remove_wp_columns( $columns ) {
   unset($columns['comments']);
   unset($columns['tags']);
-  unset($columns['wpseo-score']);
-  unset($columns['gadwp_stats']);
   return $columns;
 }
 
