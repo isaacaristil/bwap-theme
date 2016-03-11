@@ -9,6 +9,10 @@ add_action('wp_enqueue_scripts', function(){
 
 	wp_deregister_script('jquery');
     wp_deregister_script('wp-embed');
+    /*
+    wp_register_script('scripts', get_bloginfo( 'template_url' ).'/js/scripts.js', null, null, true );
+    wp_enqueue_script('scripts');
+    */
 });
 
 /**
