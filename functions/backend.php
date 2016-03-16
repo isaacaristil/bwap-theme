@@ -56,6 +56,7 @@ add_action('admin_menu', function() {
 add_action( 'wp_before_admin_bar_render', function () {
     global $wp_admin_bar;
     $wp_admin_bar->remove_menu('comments');
+    $wp_admin_bar->remove_menu('updates');
     $wp_admin_bar->remove_menu('wp-logo');
 });
 
