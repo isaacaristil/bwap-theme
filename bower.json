@@ -8,6 +8,6 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "*",
-    "compass-sass-mixins": "*"
+    "bourbon": "*"
   }
 }
