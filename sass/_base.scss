@@ -1,8 +1,13 @@
 /**
+ *  Compass
+ */
+@import "../bower_components/compass-sass-mixins/lib/compass";
+
+/**
  *  Bootstrap
  */
 // Core variables and mixins
-// @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies

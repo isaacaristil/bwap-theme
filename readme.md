@@ -1,7 +1,10 @@
+## BWAP Theme is not a parent theme
+
+This theme is meant to be installed and hacked. It's not a parent theme and is can't be updated.
+
 ## Requirements
- - Php 5.6 or higher
- - Bower 1.5.2 or higher
- - Compass 1.0.3 or higher
+ - Bower
+ - Gulp
 
 ## Initialize a new project
 
@@ -15,10 +18,13 @@ cd bwap-theme
 
 Update the theme depedencies :
 ```
+npm install
 bower install
 ```
 
 Then compile the css :
 ```
-compass compile
+gulp css
+//or
+gulp css:watch
 ```
