@@ -27,3 +27,8 @@ if (is_admin()) {
 }
 
 require('functions/functions.php');
+
+/**
+ *  Uncomment for WooCommerce usage
+ */
+require('functions/woocommerce/wc.init.php');
