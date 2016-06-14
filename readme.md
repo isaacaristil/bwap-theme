@@ -1,6 +1,6 @@
 ## BWAP Theme is not a parent theme
 
-This theme is meant to be installed and hacked. It's not a parent theme and is can't be updated.
+This theme is meant to be installed and hacked. It's not a parent theme and it can't be updated.
 
 ## Requirements
  - Bower
@@ -19,10 +19,11 @@ cd bwap-theme
 Update the theme depedencies :
 ```
 npm install
-bower install
 ```
 
-Then compile the css :
+This will automatically run the bower installation and compiles a first CSS.
+
+Next time you will need to compile the CSS, use
 ```
 gulp css
 //or
