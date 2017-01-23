@@ -21,13 +21,13 @@ add_action('wp_enqueue_scripts', function(){
 add_filter('show_admin_bar', '__return_false');
 
 /**
- *  Custom login logo
+ *  Remove login logo
  */
 add_action('login_enqueue_scripts', function () {
     echo '
     <style type="text/css">
         .login h1 a {
-            background-image: url('.get_stylesheet_directory_uri().'/images/logo.svg);
+            background-image: none;
             width:100%;
             padding-bottom: 30px;
         }
