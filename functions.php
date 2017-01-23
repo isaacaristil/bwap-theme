@@ -32,3 +32,13 @@ require('functions/functions.php');
  *  Uncomment for WooCommerce usage
  */
 //require('functions/woocommerce/wc.init.php');
+
+/**
+ * Add theme configuration
+ */
+
+// requires https://github.com/alanpilloud/bwap-ga
+// add_theme_support('google-analytics', 'UA-CODE');
+
+// requires https://github.com/alanpilloud/bwap-ga
+// add_theme_support('cleaner');
