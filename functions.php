@@ -31,4 +31,4 @@ require('functions/functions.php');
 /**
  *  Uncomment for WooCommerce usage
  */
-require('functions/woocommerce/wc.init.php');
+//require('functions/woocommerce/wc.init.php');
