@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "*",
-    "bourbon": "*"
+    "bootstrap-sass-official": "*"
   }
 }
