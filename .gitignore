@@ -3,3 +3,6 @@ bower_components/
 node_modules/
 style.css
 *.swp
+app/
+!app/themes/bwap-theme*
+!app/themes/mu-plugins*
