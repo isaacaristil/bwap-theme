@@ -6,13 +6,13 @@ var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
 
 gulp.task('css', function () {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(csso())
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./wp-content/themes/bwap-theme'));
 });
 
 gulp.task('css:watch', function () {
-      gulp.watch('./sass/**/*.scss', ['css']);
+      gulp.watch('./src/sass/**/*.scss', ['css']);
 });
