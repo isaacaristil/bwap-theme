@@ -1,18 +1,19 @@
 {
-    "name": "bwap-theme",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "bower install && gulp css"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "gulp": "latest",
-        "gulp-sass": "latest",
-        "gulp-autoprefixer": "latest",
-        "gulp-csso": "latest"
-    }
+  "name": "bwap-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install && gulp css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "latest",
+    "gulp-sass": "latest"
+  }
 }
