@@ -1,8 +1,11 @@
 .sass-cache/
 bower_components/
 node_modules/
-style.css
 *.swp
-app/
-!app/themes/bwap-theme*
-!app/themes/mu-plugins*
+app/*
+app/wp-content/*
+app/wp-content/themes/*
+!app/wp-content/themes/bwap-theme
+app/wp-content/themes/bwap-theme/style.css
+app/wp-content/themes/bwap-theme/main.js
+!app/wp-content/mu-plugins/
